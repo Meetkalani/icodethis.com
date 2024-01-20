@@ -1,0 +1,188 @@
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    height: 100vh;
+    background-color: #D6F0E5;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 62px;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* Utility class for flex display */
+.d-flex {
+    display: flex;
+}
+
+/* Styling for the main container */
+#food-app {
+    background-color: #D8704E;
+    width: min(90%,400px);
+    height: 580px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 20px;
+    box-shadow: 0.5rem 0.5rem 3rem -0.75rem #D8704E;
+    position: relative;
+}
+
+/* Remove scrollbar */
+#food-app::-webkit-scrollbar {
+    width: 0em;
+}
+
+/* Styling for the main header */
+.main-header {
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.main-header .title {
+    font-size: 1.3rem;
+}
+
+.main-header i {
+    color: #FEBAAB;
+    cursor: pointer;
+}
+
+/* Styling for navigation */
+nav {
+    flex-direction: column;
+    justify-content: center;
+    height: 86%;
+    padding: 13%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    transition: 300ms;
+    width: fit-content;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #ffffff;
+}
+
+.search-input{
+    position: absolute;
+    top: 18px;
+    padding: 12px 10px;
+    background-color: #D8704E;
+    border: none;
+    border-bottom: 3px solid #FEBAAB;
+    right: 18%;
+    width: 60%;
+    font-size: 1rem;
+    color: #ffffff;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #FEBAAB;
+}
+
+/* Styling for restaurants */
+.restaurants {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    background-color: #F58366;
+    border: 1px solid #DE6D50;
+    padding: 10px 0;
+    transition: 300ms;
+    right: 187px;
+    cursor: pointer;
+}
+
+.restaurants:hover {
+    background-color: #DD6E51;
+}
+
+.restaurants .restaurant-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.restaurants .rating {
+    color: #FEEC7C;
+    font-size: 0.8rem;
+}
+
+.no-star {
+    color: #DE6E53;
+}
+
+.restaurants .tags {
+    gap: 5px;
+}
+
+.restaurants .tags .tag {
+    padding: 1px 3px;
+    font-size: 0.7rem;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.restaurants .restaurant-distance {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant-distance i {
+    font-size: 1.4rem;
+}
+
+/* Styling for user action container */
+.user-action-container {
+    display: none;
+    justify-content: end;
+    height: 110px;
+    gap: 20px;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.user-action-container div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.user-action-container i {
+    font-size: 1.2rem;
+}
+
+.user-action-container .fa-phone-flip {
+    color: #52DB5D;
+}
+
+.user-action-container .fa-bookmark {
+    color: #65B5F7;
+}

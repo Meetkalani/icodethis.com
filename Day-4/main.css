@@ -1,0 +1,150 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F7FF;
+    color: #2B2D57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Common Utility Classes */
+.strong {
+    font-weight: 600;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Main Styles */
+main {
+    width: 600px;
+    background-color: #E8EFFF;
+    border-radius: 15px;
+}
+
+.checkout-card {
+    position: relative;
+    top: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    margin: auto;
+    background-color: #ffffff;
+    width: 500px;
+    border-radius: 12px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkout-card .checkout-price {
+    font: 700 1.5em 'Poppins', sans-serif;
+}
+
+.checkout-card .checkout-btn {
+    width: 100%;
+    background-image: linear-gradient(to right, #5EEB86, #8BF2E7);
+    padding: 12px 0;
+    border-radius: 8px;
+}
+
+.checkout-card .round-bg {
+    background-color: #EAEEFF;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.checkout-card .zipcode-content {
+    background-color: #F2F5FF;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.checkout-card .zipcode-input {
+    flex: 2;
+    border: 1px solid #DFE1F3;
+    border-left: none;
+    background-color: #F2F5FF;
+    padding: 12px 10px;
+    margin-right: 10px;
+    border-radius: 0 8px 8px 0;
+    width: 100%;
+
+}
+
+.checkout-card .zipcode-title{
+    margin-bottom: 15px;
+}
+
+.checkout-card .zipcode-input:focus {
+    outline: none;
+}
+
+.checkout-card .search-icon {
+    border: 1px solid #DFE1F3;
+    border-right: none;
+    padding: 12px 0px 12px 15px;
+    border-radius: 8px 0 0 8px;
+}
+
+.checkout-card .zipcode-input::placeholder {
+    color: #2B2D57;
+    font-weight: 600;
+}
+
+.checkout-card .zipcode-btn {
+    background-color: #ffffff;
+    padding: 12px 20px;
+    flex: 1;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+.checkout-card .pickup-btn {
+    width: 100%;
+    background-color: #AEAFFF;
+    padding: 12px 0;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 750px) {
+    main{
+        width: 90%;
+        font-size: 14px;
+    }
+    .checkout-card{
+        width: 90%;
+        padding: 20px;
+    }
+}

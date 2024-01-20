@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <section id="dashboard">
+        <nav>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="active nav-link">Projects</a>
+                <a href="#" class="nav-link">Inbox</a>
+                <a href="#" class="nav-link">Teams</a>
+            </div>
+            <div class="account-details">
+                <button type="button" class="plan-btn">Upgrade</button>
+                <div class="round-bg" onclick="openNavbar()"><span>JG</span></div>
+            </div>
+        </nav>
+        <main>
+            <div class="project-quick-links">
+                <div class="project-links">
+                    <div class="d-flex">
+                        <span class="project-title">Projects</span>
+                        <span class="close-icon" onclick="closeProjects()">x</span>
+                    </div>
+                    <ul class="project-name">
+                        <li class="yellow-li"><span>boardme development</span></li>
+                        <li class="orange-li"><span>Feature lists</span></li>
+                        <li class="blue-li"><span>Marketing</span></li>
+                        <li class="purple-li"><span>UIDD development</span></li>
+                        <li class="orange-li"><span>Topics</span></li>
+                        <li class="pink-li"><span>Bugs and fixes</span></li>
+                        <li class="project-expand-link"><a href="#">View all ></a></li>
+                    </ul>
+                </div>
+                <div class="teams">
+                    <span class="team-title">Teams</span>
+                    <div class="team-subscription-container">
+                        <p class="strong">Need to form a team?</p>
+                        <p class="team-subscription-description">Try out 30 days trial and see what you can achieve
+                            together.</p>
+                        <button type="button" class="team-subscription-btn">Try it free</button>
+                    </div>
+                </div>
+            </div>
+            <span class="expand-projects" onclick="openProjects()">Expand Project Quick Links ></span>
+            <div class="projects">
+                <span class="project-title">Projects</span>
+                <div class="project-list">
+                    <div class="project">
+                        <div class="project-icon blue-color">
+                            <span class="project-icon-text">M</span>
+                        </div>
+                        <span class="project-name">Marketing</span>
+                    </div>
+                    <div class="project">
+                        <div class="project-icon orange-color">
+                            <span class="project-icon-text">FI</span>
+                        </div>
+                        <span class="project-name">Feature lists</span>
+                    </div>
+                    <div class="project">
+                        <div class="project-icon yellow-color">
+                            <span class="project-icon-text">bd</span>
+                        </div>
+                        <span class="project-name">boardme development</span>
+                    </div>
+                    <div class="project">
+                        <div class="project-icon purple-color">
+                            <span class="project-icon-text">Ud</span>
+                        </div>
+                        <span class="project-name">UIDD development</span>
+                    </div>
+                    <div class="add-project-btn">
+                        <div class="add-project-icon">
+                            <span class="add-project-icon-text">+</span>
+                        </div>
+                        <span class="add-project-title">Add a project</span>
+                    </div>
+                </div>
+                <div class="bottom-menu-container">
+                    <span class="expand-icon">...</span>
+                    <a href="#" class="privacy-link">Privacy</a>
+                    <div class="faq-icon"><span>?</span></div>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

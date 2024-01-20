@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #252531;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.strong {
+    font-weight: 600;
+}
+
+.blue-li {
+    color: #56AEFF;
+}
+
+.blue-color {
+    background-color: #56AEFF;
+}
+
+.orange-li {
+    color: #FE8157;
+}
+
+.orange-color {
+    background-color: #FE8157;
+}
+
+.yellow-li {
+    color: #FFB65A;
+}
+
+.yellow-color {
+    background-color: #FFB65A;
+}
+
+.purple-li {
+    color: #B058FE;
+}
+
+.purple-color {
+    background-color: #B058FE;
+}
+
+.pink-li {
+    color: #ae8188;
+}
+
+nav .nav-link {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #434343;
+}
+
+#dashboard {
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 80%;
+    height: 90%;
+    padding: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+nav .nav-links {
+    display: flex;
+}
+
+nav .nav-links .active {
+    font-weight: 600;
+}
+
+nav .account-details {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+nav .account-details .plan-btn {
+    border-radius: 20px;
+    border: 3px solid #939293;
+    color: #434343;
+    background-color: transparent;
+    padding: 11px 20px;
+    transition: 200ms;
+}
+
+nav .account-details .plan-btn:hover,
+nav .account-details .plan-btn:active {
+    background-color: #434343;
+    color: #ffffff;
+}
+
+nav .account-details .round-bg {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #E9527F;
+    cursor: pointer;
+}
+
+#dashboard main {
+    display: flex;
+    height: 90%;
+    position: relative;
+}
+
+#dashboard .project-quick-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #252531;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    height: 100%;
+}
+
+.d-flex .close-icon {
+    visibility: hidden;
+}
+
+#dashboard .project-quick-links .project-title,
+#dashboard .project-quick-links .team-title {
+    color: #82848E;
+    text-transform: uppercase;
+}
+
+#dashboard .project-quick-links .project-name {
+    margin: 10px 0 0 20px;
+}
+
+#dashboard .project-quick-links .project-name span {
+    color: #ffffff;
+}
+
+#dashboard .project-quick-links .project-expand-link {
+    list-style: none;
+}
+
+#dashboard .project-quick-links .project-expand-link a {
+    text-decoration: none;
+    color: #4C86C0;
+}
+
+#dashboard .project-quick-links .project-name li {
+    padding: 5px 0;
+}
+
+#dashboard .project-quick-links .team-subscription-container {
+    padding: 15px;
+    background-color: #383C53;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#dashboard .project-quick-links .team-subscription-btn {
+    background-color: #FFFFFE;
+    width: 100%;
+    padding: 15px 0;
+    color: #535253;
+    border-radius: 10px;
+}
+
+#dashboard .project-quick-links .team-subscription-description {
+    margin: 20px 0;
+}
+
+#dashboard .projects {
+    padding: 30px;
+    flex: 3;
+    height: 100%;
+}
+
+#dashboard .projects .project-list {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, 200px);
+    margin-top: 20px;
+    gap: 20px;
+    height: 90%;
+}
+
+#dashboard .projects .project {
+    margin: auto;
+    cursor: pointer;
+}
+
+#dashboard .projects .project-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #3F3F40;
+}
+
+#dashboard .projects .add-project-btn {
+    cursor: pointer;
+}
+
+#dashboard .projects .project-icon,
+#dashboard .projects .add-project-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    /* background-color: #383C53; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+#dashboard .projects .project-icon-text,
+#dashboard .projects .add-project-icon-text {
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#dashboard .projects .add-project-icon-text {
+    color: #6E6D82;
+}
+
+#dashboard .projects .add-project-icon {
+    border: 3px solid #D0CEE5;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: transparent;
+}
+
+#dashboard .projects .project-name,
+#dashboard .projects .add-project-title {
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#dashboard .projects .bottom-menu-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+}
+
+#dashboard .projects .faq-icon {
+    border: 3px solid #C9C7CF;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+#dashboard .projects .privacy-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #434343;
+}
+
+#dashboard .projects .expand-icon {
+    cursor: pointer;
+}
+
+#dashboard .expand-projects {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    #dashboard .project-quick-links {
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+    }
+
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .d-flex .close-icon {
+        cursor: pointer;
+        visibility: visible;
+    }
+
+    #dashboard .expand-projects {
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        text-decoration: underline;
+        cursor: pointer;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    #dashboard {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+    }
+
+    nav .nav-links {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        height: 65vh;
+        background-color: #252531;
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 2;
+        visibility: hidden;
+    }
+
+    nav .nav-link {
+        color: #ffffff;
+    }
+
+    nav .account-details {
+        order: 1;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width:560px) {
+    #dashboard .teams {
+        display: none;
+    }
+
+    #dashboard .projects .project-list {
+        justify-content: center;
+        overflow: scroll;
+    }
+
+    #dashboard .projects .project-title {
+        text-align: center;
+        display: block;
+    }
+
+    #dashboard .projects .bottom-menu-container{
+        margin-top: 20px;
+    }
+}

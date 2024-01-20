@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E6F5;
+}
+
+
+.flex-container{
+    display: flex;
+    gap: 1rem;
+}
+
+button{
+    padding: 0.8rem 0;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+#plans{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+
+.plan{
+    width: 25rem;
+    height: 36rem;
+    background-color: #ffffff;
+    border: 10px solid #E9D8F7;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 4rem;
+}
+
+.plan .plan-name{
+    font: 700 1.5rem 'Times New Roman', Times, serif;
+    display: block;
+}
+
+.plan:nth-child(1) .plan-name{
+    color: #7F70BA;
+}
+
+.plan:nth-child(2) .plan-name{
+    color: #C54589;
+}
+
+.plan .plan-features{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.plan .fa-check{
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: #EEF9EA;
+    color: #749F5F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan .starter-plan-btn{
+    border: 3px solid #7F70BA;
+    background-color: transparent;
+    color: #7F70BA;
+    transition: 300ms;
+}
+
+.plan .starter-plan-btn:hover{
+    background-color: #7F70BA;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.plan .professional-plan-btn{
+    border: 3px solid transparent;
+    background-color: #C54589;
+    color: #ffffff;
+    transition: 300ms;
+}
+
+.plan .professional-plan-btn:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        height: auto;
+    }
+
+    #plans{
+        flex-direction: column;
+    }
+
+    .plan{
+        width: 90%;
+    }
+}
