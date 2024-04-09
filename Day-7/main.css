@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E5DEFD;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: #FEFFFE;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: min(90%,1080px);
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    padding: 50px 200px;
+}
+
+.title{
+    padding: 5px 20px;
+    background-color: #DBDADB;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.arial-font{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+
+.timesnewroman-font{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.underlined{
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.orange-txt{
+    color: #EE5531;
+}
+
+.orange-square{
+    width: 75px;
+    height: 75px;
+    background-color: #EE5531;
+}
+
+.purple-txt{
+    color: #4420AA;
+    margin-top: 10px;
+}
+
+.purple-circle{
+    width: 75px;
+    height: 75px;
+    background-color: #4420AA;
+    border-radius: 50%;
+}
+
+button{
+    padding: 15px 55px;
+    background-color: #4420AA;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    background-color: #856DDA;
+}
+
+button:active{
+    background-color: #D0C5F0;
+}
+
+.buttons-container span:not(.title){
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        padding: 50px 15%;
+    }
+}

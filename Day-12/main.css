@@ -1,0 +1,148 @@
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the overall page body */
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #0189D3, #01AEC4);
+    font-family: 'Roboto', sans-serif;
+    color: #546E76;
+}
+
+/* Styling for all buttons */
+button {
+    padding: 8px 12px;
+    background-color: #26B6F5;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    width: fit-content;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+button:hover{
+    background-color: #0189D3;
+}
+
+/* Utility class */
+.flex {
+    display: flex;
+}
+
+/* main styling */
+#flight-booking {
+    background-color: #fff;
+    width: min(90%, 28rem);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+header {
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    color: #A0B7CA;
+    background-color: #EDEFF1;
+}
+
+header .flight-route {
+    font-weight: 700;
+    color: #546E76;
+}
+
+header i {
+    cursor: pointer;
+    transition: 300ms;
+}
+
+header i:hover{
+    color: #0189D3;
+    transform: scale(1.2);
+}
+
+main {
+    height: calc(100% - 5rem);
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    position: relative;
+}
+
+main .flight-info {
+    flex: 4;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main .vertical-line {
+    flex: 1;
+    width: 2px;
+    position: relative;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+main .vertical-line::after {
+    content: "";
+    height: 100%;
+    width: 2px;
+    top: 22px;
+    right: 10px;
+    position: absolute;
+    background-color: #EDEFF1;
+}
+
+main .last-vertical-line::after {
+    background-color: transparent;
+}
+
+main .vertical-line i {
+    color: #68E21B;
+    font-size: 1.4rem;
+}
+
+main .confirmation-code {
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+main .small-txt {
+    font-size: 0.8rem;
+}
+
+main .tags {
+    gap: 0.6rem;
+}
+
+main .tag {
+    background-color: #ECF1F2;
+    width: fit-content;
+    padding: 4px 6px;
+    display: block;
+    border-radius: 12px;
+}
+
+main .info-title {
+    color: #0189D3;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 430px) {
+    #flight-booking {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}

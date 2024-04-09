@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8EDF8;
+    columns: #0D1133;
+}
+
+button{
+    border: 3px solid #EAEAF9;
+    background-color: transparent;
+    width: 14rem;
+    height: 3rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+button:hover{
+    transform: scale(1.02);
+}
+
+img{
+    width: 4rem;
+}
+
+p{
+    font-size: 0.9rem;
+}
+
+#subscription-card{
+    padding:2.5rem;
+    width: min(90%,26rem);
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 22px;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.general-content{
+    text-align: center;
+}
+
+.general-title{
+    font: 700 1.5rem 'Times New Roman', Times, serif;
+    margin-bottom: 0.7rem;
+}
+
+.plans .plan{
+    border: 5px solid #E9E7F2;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.plans .plan .plan-info{
+    flex-direction: column;
+}
+
+input{
+    transform: scale(1.5);
+}
+
+.plans .recommended-badge{
+    background-color: #2F41EE;
+    font-size: 0.8rem;
+    width: fit-content;
+    border-radius: 14px;
+    padding: 4px 8px;
+    color: #fff;
+}
+
+.action-btns{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.continue-btn{
+    background-color: #0D1133;
+    color: #fff;
+    border-color: transparent;
+}
+
+@media screen and (max-width:430px) {
+    #subscription-card{
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+}
